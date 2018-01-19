@@ -1,7 +1,13 @@
-var textEntry = document.getElementById("text")
-var button = document.getElementsByID("Submit")
-
-
-function show() {
-    document.getElementById("message1").innerHTML = window.location.search
+function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        if (decodeURIComponent(pair[0]) == variable) {
+            return decodeURIComponent(pair[1]);
+        }
+    }
+    console.log('Query variable %s not found', variable)
 }
+
+document.getElementById("message1").innerHTML = getQueryVariable("message")
