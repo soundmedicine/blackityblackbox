@@ -1,0 +1,1 @@
+var textEntry = document.getElementById("text")
