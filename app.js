@@ -5,5 +5,6 @@ var button = document.getElementsByID("Submit")
 button.addEventlistener("click", show)
 
 function show() {
-document.getElementById("front").innerHTML = window.location.search
+    document.getElementById("front").innerHTML = window.location.search
+
 }
