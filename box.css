@@ -3,15 +3,33 @@
 	justify-content: center;	
 	align-items: center;
 	height: 100%;
-	background: #820263;
+	background: #3A6EA5;
 	font-family: 'Supermercado One', cursive;
-
+	text-shadow: 2px 2px 8px grey;
 }
+
+#title {
+	display: flex;
+	flex-direction: row;
+}
+
 
 main {
 	display: flex;
 	flex-direction: column;
 
+}
+
+h1 {
+	font-size: 80px;
+}
+
+p {
+	font-size: 50px;
+}
+
+#red {
+	color: #D62828;
 }
 .wrap {
 	perspective: 800px;
