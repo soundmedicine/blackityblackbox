@@ -17,17 +17,17 @@
 
 .back {
 	transform: translateZ(-100px) rotateY(180deg);
-	background-color: yellow;
+	background: radial-gradient(circle, rgb(56, 55, 55), rgb(34, 34, 34), rgb(3, 3, 3));
 }
 .right {
 	transform: rotateY(-270deg) translateX(100px);
 	transform-origin: top right;
-	background-color:  green;
+	background: radial-gradient(circle, rgb(56, 55, 55), rgb(34, 34, 34), rgb(3, 3, 3));
 }
 .left {
 	transform: rotateY(270deg) translateX(-100px);
 	transform-origin: center left;
-	background-color: blueviolet;
+	background: radial-gradient(circle, rgb(56, 55, 55), rgb(34, 34, 34), rgb(3, 3, 3));
 }
 .top {
 	transform: rotateX(-90deg) translateY(-100px);
@@ -36,10 +36,11 @@
 .bottom {
 	transform: rotateX(90deg) translateY(100px);
 	transform-origin: bottom center;
+	background: radial-gradient(circle, rgb(56, 55, 55), rgb(34, 34, 34), rgb(3, 3, 3));
 }
 .front {
 	transform: translateZ(100px);
-	background-color: red;
+	background: radial-gradient(circle, rgb(56, 55, 55), rgb(34, 34, 34), rgb(3, 3, 3));
 }
 
 @keyframes spin {
