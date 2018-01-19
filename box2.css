@@ -1,10 +1,95 @@
-html {
-        display: flex;
-        justify-content: center;	
-        align-items: center;
-        height: 100%;
-        background: #820263;
-        font-family: 'Supermercado One', cursive;
-    
+*  {
+	display: flex;
+	justify-content: center;	
+	align-items: center;
+	height: 100%;
+	background: #3A6EA5;
+	font-family: 'Supermercado One', cursive;
+	text-shadow: 2px 2px 8px grey;
 }
-    
+
+#title {
+	display: flex;
+	flex-direction: row;
+}
+
+
+main {
+	display: flex;
+	flex-direction: column;
+
+}
+
+h1 {
+	font-size: 80px;
+}
+
+p {
+	font-size: 50px;
+}
+
+a {
+	color: black;
+}
+
+#red {
+	color: #D62828;
+}
+.wrap {
+	perspective: 800px;
+	perspective-origin: 50% 100px;
+}
+
+.cube {
+	position: relative;
+	width: 200px;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cube div {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+}
+
+.back {
+	transform: translateZ(-100px) rotateY(180deg);
+	background: radial-gradient(circle, rgb(56, 55, 55), rgb(34, 34, 34), rgb(3, 3, 3));
+}
+.right {
+	transform: rotateY(-270deg) translateX(100px);
+	transform-origin: top right;
+	background: radial-gradient(circle, rgb(56, 55, 55), rgb(34, 34, 34), rgb(3, 3, 3));
+}
+.left {
+	transform: rotateY(270deg) translateX(-100px);
+	transform-origin: center left;
+	background: radial-gradient(circle, rgb(56, 55, 55), rgb(34, 34, 34), rgb(3, 3, 3));
+}
+.top {
+	transform: rotateX(-90deg) translateY(-100px);
+	transform-origin: top center;
+}
+.bottom {
+	transform: rotateX(90deg) translateY(100px);
+	transform-origin: bottom center;
+	background: radial-gradient(circle, rgb(56, 55, 55), rgb(34, 34, 34), rgb(3, 3, 3));
+}
+.front {
+	transform: translateZ(100px);
+	background: radial-gradient(circle, rgb(56, 55, 55), rgb(34, 34, 34), rgb(3, 3, 3));
+}
+
+@keyframes spin {
+	from { transform: rotateY(0); }
+	to { transform: rotateY(360deg); }
+}
+
+.cube {
+	animation: spin 5s infinite linear;
+}
+
+
