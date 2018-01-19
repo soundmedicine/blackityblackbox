@@ -5,6 +5,9 @@
 	height: 100%;
 }
 
+main {
+	display: flex;
+}
 .wrap {
 	perspective: 800px;
 	perspective-origin: 50% 100px;
